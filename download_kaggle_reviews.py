@@ -13,6 +13,7 @@ df = kagglehub.load_dataset(
     file_path,
 )
 
+
 # Save it as CSV to be consumed by Power BI
 output_path = os.path.join(os.getcwd(), "chatgpt_reviews_latest.csv")
 df.to_csv(output_path, index=False)
